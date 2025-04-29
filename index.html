@@ -1,165 +1,85 @@
 <!doctype html>
-
 <html lang="en">
-
-  <head>
-
+<head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131550733-1"></script>
-
 	<script>
-
-	  window.dataLayer = window.dataLayer || [];
-
-	  function gtag(){dataLayer.push(arguments);}
-
-	  gtag('js', new Date());
-
-
-
-	  gtag('config', 'UA-131550733-1');
-
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-131550733-1');
 	</script>
-
-
-
-  
-
-    <!-- Required meta tags -->
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-
-    <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-
-		<title>WebSpot</title>
-		
-		<meta property="og:title" content="WebSpot Razvoj programske opreme">
-		<meta property="og:description" content="Razvoj programske opreme">
-		<meta property="og:image" content="http://webspot.si/logo.png">
-		<meta property="og:url" content="http://webspot.si/">
-
-	
-
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<title>WebSpot</title>
+	<meta property="og:title" content="WebSpot Razvoj programske opreme">
+	<meta property="og:description" content="Razvoj programske opreme">
+	<meta property="og:image" content="http://webspot.si/logo.png">
+	<meta property="og:url" content="http://webspot.si/">
 	<style>
-
-	
-
-	.card-icon i {
-
-		font-size: 4rem;
-
-	}
-
-	.logo {
-		background: url("logo.png");
-		width: 4rem;
-		height: 4rem;
-		background-size: 4rem;
-	}
-
-
-	@media (max-width: 767.98px) { 
-
 		.card-icon i {
-
-			font-size: 3.5rem;
-
+			font-size: 4rem;
 		}
-
-		.title:not(p) {
+		.logo {
+			background: url("logo.png");
+			width: 4rem;
+			height: 4rem;
+			background-size: 4rem;
+		}
+		@media (max-width: 767.98px) {
+			.card-icon i {
+				font-size: 3.5rem;
+			}
+			.title:not(p) {
+				font-size: 1.5rem;
+			}
+		}
+		i[class*=fa] {
+			color: black;
+		}
+		.footer i[class*=fa] {
 			font-size: 1.5rem;
 		}
-
-	}
-
-	
-
-	i[class*=fa] {
-
-		color: black;
-
-	}
-
-	
-
-	.footer i[class*=fa] {
-
-		font-size: 1.5rem;
-
-	}
-
-	
-
-	.title:not(p) {
-		font-family: Orbitron, 'Arial';
-		font-weight: 400;
-
-		letter-spacing: 5px;
-
-	}
-
-	
-
-	#cookies > div, .header {
-
-		background:#3498db;
-
-	}
-
-	.text-both {
-		text-align: justify;
-	}
-
+		.title:not(p) {
+			font-family: Orbitron, 'Arial';
+			font-weight: 400;
+			letter-spacing: 5px;
+		}
+		#cookies>div,
+		.header {
+			background: #3498db;
+		}
+		.text-both {
+			text-align: justify;
+		}
 	</style>
-
-  </head>
-
-  <body onload="init()">
-
-	
-
+</head>
+<body onload="init()">
 	<div class="container">
-
 		<div class="row text-white pt-md-4 pb-md-4 pt-2 pb-2 mb-3 header">
 			<div class="col-md-2 align-self-center mr-md-2 pr-md-0 text-md-right text-center mb-1 mb-md-0">
-					<div class="logo d-inline-block align-bottom"></div>
+				<div class="logo d-inline-block align-bottom"></div>
 			</div>
-
 			<div class="col-md-4 col-lg-3 col-xl-3 align-self-center text-md-left text-center ml-md-2 pl-md-0">
 				<h1 class="title d-inline mr-2 align-baseline">WebSpot</h1>
 			</div>
-
 			<div class="col align-self-center text-md-left text-center	">
-
 				<p class="title d-inline">Razvoj programske opreme</p>
-
 			</div>
 		</div>
-
-		
-
 		<div class="container">
-
 			<div class="alert alert-primary" role="alert">
-
-			  <i class="fas fa-info-circle mr-2"></i>Spletna stran je še v izdelavi
-
+				<i class="fas fa-info-circle mr-2"></i>Spletna stran je še v izdelavi
 			</div>
-
 			<div class="row">
-
 				<div class="col-lg-9">
-
 					<div class="row">
 						<div class="col-md-4 col-sm-6 mb-2">
 							<div class="card">
@@ -168,12 +88,14 @@
 								</a>
 								<div class="card-body">
 									<h5 class="card-title">Crossword</h5>
-									<small class="card-text d-block text-both mb-2">Križanka; igra, narejena v JavaScriptu. Prilagojena, tako da podpira rešitve z večii besedami (presledki so označeni z črkanimi črtami). Podpira izpisovanje večih zaporednih števil besed v posamezni kvadrat.</small>
+									<small class="card-text d-block text-both mb-2">Križanka; igra, narejena v
+										JavaScriptu. Prilagojena, tako da podpira rešitve z večii besedami (presledki so
+										označeni z črkanimi črtami). Podpira izpisovanje večih zaporednih števil besed v
+										posamezni kvadrat.</small>
 									<a href="./examples/crossword/index.html" class="btn btn-primary">Zaženi</a>
 								</div>
 							</div>
 						</div>
-
 						<div class="col-md-4 col-sm-6 mb-2">
 							<div class="card">
 								<a href="./examples/word-scramble/index.html" target="_blank" rel="noopener noreferrer">
@@ -181,240 +103,131 @@
 								</a>
 								<div class="card-body">
 									<h5 class="card-title">Word shuffle</h5>
-									<small class="card-text d-block text-both mb-2">Premetanka; igra, katere cilj je najti besede iz premešanih črk. Izmed večih besed se sestavi glavna rešitev.</small>
+									<small class="card-text d-block text-both mb-2">Premetanka; igra, katere cilj je
+										najti besede iz premešanih črk. Izmed večih besed se sestavi glavna
+										rešitev.</small>
 									<a href="./examples/word-scramble/index.html" class="btn btn-primary">Zaženi</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
 					<div class="row">
-
 						<div class="col-12">
-
 							<h3>Naše storitve</h3>
-
 						</div>
-
 					</div>
-
 					<div class="row border mb-3 bg-light p-2">
-
 						<div class="col-sm-2 card-icon align-self-center text-center m-2">
-
-						  <i class="fab fa-wordpress-simple fa-fw align-self-center"></i>
-
+							<i class="fab fa-wordpress-simple fa-fw align-self-center"></i>
 						</div>
-
 						<div class="col align-self-center">
-
 							Vzpostavitev in prilagoditev Wordpress spletnih strani.</div>
-
 					</div>
-
-					
-
 					<div class="row border mb-3 bg-light p-2">
-
 						<div class="col-sm-2 card-icon align-self-center text-center m-2">
-
-						  <i class="fab fa-php fa-fw"></i>
-
+							<i class="fab fa-php fa-fw"></i>
 						</div>
-
 						<div class="col align-self-center">
-
 							Programiranje PHP aplikacij.
-
 						</div>
-
 					</div>
-
-					
-
 					<div class="row border mb-3 bg-light p-2">
-
 						<div class="col-sm-2 card-icon align-self-center text-center m-2">
-
-						  <i class="fab fa-vuejs fa-fw"></i>
-
+							<i class="fab fa-vuejs fa-fw"></i>
 						</div>
-
 						<div class="col align-self-center">
-
-							Razvoj čelnih aplikacij v jQuerry in VueJS. Prav tako v kombinaciji z storitvo izdelave spletne strani nudimo prilagoditev Wordpress pluginov.
-
+							Razvoj čelnih aplikacij v jQuerry in VueJS. Prav tako v kombinaciji z storitvo izdelave
+							spletne strani nudimo prilagoditev Wordpress pluginov.
 						</div>
-
-					</div>			
-
+					</div>
 					<div class="row border mb-3 bg-light p-2">
-
 						<div class="col-sm-2 card-icon align-self-center text-center m-2">
-
-						  <i class="fab fa-facebook"></i>
-
+							<i class="fab fa-facebook"></i>
 						</div>
-
 						<div class="col align-self-center">
-
 							Oglaševanje v Facebook skupinah
-
 						</div>
-
 					</div>
-
-					
-
 					<div class="row footer mb-4">
-
 						<div class="col-12">
-
 							<h3>Kontakt</h3>
-
 							<div class="row border mb-3 bg-light p-2 ">
-
 								<div class="col-sm-6 text-center mb-2 mb-sm-0">
-
 									<a href="mailto:info@webspot.si">info@webspot.si</a>
-
 								</div>
-
-								
-
 								<div class="col text-center">
-
 									<a href="https://www.facebook.com/webspot.si/"><i class="fab fa-facebook"></i></a>
-
 								</div>
-
-								
-
 								<div class="col text-center">
-
 									<a href="https://www.instagram.com/webspot.si/"><i class="fab fa-instagram"></i></a>
-
 								</div>
-
-								
-
 								<div class="col text-center">
-
-									<a href="https://www.linkedin.com/company/webspot-si"><i class="fab fa-linkedin"></i></a>
-
+									<a href="https://www.linkedin.com/company/webspot-si"><i
+											class="fab fa-linkedin"></i></a>
 								</div>
-
 							</div>
-
 						</div>
-
 					</div>
-
 				</div>
-
 				<div class="col-lg-3 text-center">
-
-					<div class="fb-page" data-href="https://www.facebook.com/webspot.si/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/webspot.si/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/webspot.si/">WebSpot razvoj programskih rešitev</a></blockquote></div>
-
+					<div class="fb-page" data-href="https://www.facebook.com/webspot.si/" data-tabs="timeline"
+						data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+						data-show-facepile="true">
+						<blockquote cite="https://www.facebook.com/webspot.si/" class="fb-xfbml-parse-ignore"><a
+								href="https://www.facebook.com/webspot.si/">WebSpot razvoj programskih rešitev</a>
+						</blockquote>
+					</div>
 					<!--<div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'QbD5vxcXByrG97jOF5Mn'});Pixlee.addSimpleWidget({widgetId:'13512'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>-->
-
 				</div>
-
 			</div>
-
 			<di>
-
-			
-
-
-
-			
-
-			<div class="row">
-
-				<div class="col mb-5 pb-5">
-
-					<small>
-
-					  &copy; 2018 WebSpot Razvoj programske opreme, Matej Jurko, s.p. All rights reserved.
-
-					</small>
-
+				<div class="row">
+					<div class="col mb-5 pb-5">
+						<small>
+							&copy; 2018 WebSpot Razvoj programske opreme, Matej Jurko, s.p. All rights reserved.
+						</small>
+					</div>
 				</div>
-
-			</div>
-
-			
-
-			<div class="row fixed-bottom justify-content-center" style="display:none;" id="cookies">
-
-				<div class="col-md-3 color-white py-md-2 px-md-4 px-4 align-text-middle">
-
-					 <span>Spletna stran uporablja piškotke.</span>
-
+				<div class="row fixed-bottom justify-content-center" style="display:none;" id="cookies">
+					<div class="col-md-3 color-white py-md-2 px-md-4 px-4 align-text-middle">
+						<span>Spletna stran uporablja piškotke.</span>
+					</div>
+					<div class="col-md-2 py-2 px-4 text-md-right">
+						<button type="button" class="btn btn-secondary" onclick="closeCoockie()">Zapri</button>
+					</div>
 				</div>
-
-				<div class="col-md-2 py-2 px-4 text-md-right">
-
-					<button type="button" class="btn btn-secondary" onclick="closeCoockie()">Zapri</button>
-
-				</div>
-
-			</div>
-
 		</div>
-
 	</div>
-
-
-
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
 	<div id="fb-root"></div>
-
-	<script>(function(d, s, id) {
-
-	  var js, fjs = d.getElementsByTagName(s)[0];
-
-	  if (d.getElementById(id)) return;
-
-	  js = d.createElement(s); js.id = id;
-
-	  js.src = 'https://connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v3.2';
-
-	  fjs.parentNode.insertBefore(js, fjs);
-
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-	
-
+	<script>(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v3.2';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 	<script>
-
 		window.onload = function init() {
 			if (typeof localStorage.closeCookies === 'undefined') {
 				document.getElementById("cookies").style.display = "inline";
 			}
 			console.log(typeof localStorage.closeCookies === 'undefined');
-			
 		}
-
 		function closeCoockie() {
 			localStorage.closeCookies = true;
 			document.getElementById("cookies").style.display = "none";
-
 		}
-
 	</script>
-
-  </body>
-
+</body>
 </html>
